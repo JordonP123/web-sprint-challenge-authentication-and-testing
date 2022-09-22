@@ -12,7 +12,6 @@ const secret = require("../secrets/index");
 
 router.post(
   "/register",
-  checkPasswordLength,
   checkCredentialsExist,
   checkUsernameFree,
   async (req, res, next) => {
