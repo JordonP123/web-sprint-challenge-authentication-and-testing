@@ -5,7 +5,6 @@ const User = require("./auth-model");
 const {
   checkUsernameFree,
   checkCredentialsExist,
-  checkPasswordLength,
   checkCredentialsAreValid,
 } = require("./auth-middleware");
 const secret = require("../secrets/index");
